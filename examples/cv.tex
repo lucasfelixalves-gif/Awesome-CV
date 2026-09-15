@@ -1,17 +1,6 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
+% Lucas [Insert Last Name] CV
 
 
 %-------------------------------------------------------------------------------
@@ -24,24 +13,8 @@
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
-
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
@@ -49,65 +22,142 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{Claud D.}{Park}
-\position{DevOps Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{Mapo-gu, Seoul, Republic of Korea}
-
-\mobile{(+82) 10-9030-1843}
-%\whatsapp{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-%\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \x{x-id}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{medium-id}
-% \kaggle{kaggle-id}
-% \hackerrank{hackerrank-id}
-% \telegram{telegram-username}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-\quote{``Be the change that you want to see in the world."}
+\name{Lucas}{Alves}
+\position{Mechanical Engineering Master's Student}
+\address{Vila Nova de Famalicão, Portugal}
+\mobile{+351 919602005}
+\email{up202305239@up.pt}
+\github{lucasfelixalves-gif}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal information
-% Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
+  {Lucas Alves~~~\textbar~~~Curriculum Vitae}
   {\thepage}
 
 
-%-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/certificates.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {University of Porto (FEUP)}
+    {Master's in Mechanical Engineering}
+    {Porto, Portugal}
+    {2026 - Present}
+    {}
+  \cventry
+    {University of Porto (FEUP)}
+    {Bachelor's in Mechanical Engineering}
+    {Porto, Portugal}
+    {2023 - 2026}
+    {\begin{cvitems}
+      \item {Final Grade: 17/20 | Final Project Grade: 20/20}
+    \end{cvitems}}
+\end{cventries}
+
+\cvsection{Technical Skills}
+\begin{cvskills}
+  \cvskill
+    {Modeling Tools}
+    {SolidWorks, Fusion, AutoCAD}
+  \cvskill
+    {CAE \& FEM Tools}
+    {CalculiX, Gmsh, PrePoMax, SimScale}
+  \cvskill
+    {Programming \& Automation}
+    {Python (PyQt, Automation), AI-assisted development}
+  \cvskill
+    {Data \& Statistical Analysis}
+    {MS Excel, JMP, Pandas, Numpy, Matplotlib, PyVista}
+\end{cvskills}
+
+\cvsection{Experience \& Technical Projects}
+\begin{cventries}
+  \cventry
+    {WonderMac Innovative Solutions and University of Porto (FEUP)}
+    {Curricular Internship: Sonotrode Designer App}
+    {}
+    {February 2026 - July 2026}
+    {\begin{cvitems}
+      \item {Final Project of the Bachelor's in Mechanical Engineering.}
+      \item {Digitalized and fully automated a CAE pipeline for ultrasonic horn design by developing a Python/PyQt desktop application integrated with Gmsh and CalculiX, applicable to ultrasonic welding and VHCF testing.}
+    \end{cvitems}}
+  \cventry
+    {Palbit}
+    {Manufacturing Case Study: Drills \& Milling}
+    {}
+    {February 2026}
+    {\begin{cvitems}
+      \item {Participated in a technical case study focusing on replaceable-head milling cutting tools.}
+    \end{cvitems}}
+  \cventry
+    {Independent GitHub Repository}
+    {'Computation Helper' Python Suite}
+    {}
+    {2026 - Present}
+    {\begin{cvitems}
+      \item {Built a suite of digital engineering tools in Python to automate and replace manual computations in practice problems, including spur gear calculations, radiation form factors, and dynamic lookup tables.}
+    \end{cvitems}}
+\end{cventries}
+
+\cvsection{Certificates \& Coursework}
+\begin{cventries}
+  \cventry
+    {Penn State University}
+    {Microeconomics: The Power of Markets}
+    {}
+    {August 2025}
+    {\begin{cvitems}
+      \item {Economic principles and market dynamics, including supply and demand, market structures, and the role of government in markets.}
+    \end{cvitems}}
+    {}
+  \cventry
+    {University of Michigan}
+    {AI for Mechanical Engineering}
+    {}
+    {July 2026 - August 2026}
+    {\begin{cvitems}
+      \item {Consists of three courses in AI for Design and Optimization, Autonomous Vehicles, and Biomedical Applications. Explored Deep Neural Networks and other AI techniques applied to mechanical engineering problems.}
+    \end{cvitems}}
+  \cventry
+    {Coursera}
+    {Finite Element Analysis Convergence and Mesh Independence}
+    {}
+    {September 2026}
+    {\begin{cvitems}
+      \item {Introduction to convergence and mesh independence in finite element analysis, including practical examples and best practices.}
+    \end{cvitems}}
+    {}
+  \cventry
+    {University of Arizona}
+    {Design of Experiments}
+    {}
+    {September 2026 - Present}
+    {\begin{cvitems}
+      \item {Principles and applications of Design of Experiments (DOE) in engineering and research contexts. How to plan, conduct, and analyze experiments to optimize processes and products.}
+    \end{cvitems}}
+    {}
+\end{cventries}
+
+\cvsection{Seminars}
+\begin{cventries}
+  \cventry
+    {DUKANE Corporation}
+    {Designing High-Performance Medical Device Components for Plastic Welding Assembly}
+    {}
+    {March 2026}
+    {}
+  \cventry
+    {DUKANE Corporation}
+    {Advanced Plastic Welding Technologies for Automotive Applications}
+    {}
+    {April 2026}
+    {}
+\end{cventries}
 
 
 %-------------------------------------------------------------------------------
